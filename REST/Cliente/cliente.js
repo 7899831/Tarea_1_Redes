@@ -1,5 +1,5 @@
 $('#verificar').click(regresarRut);
-$('#separar').click(regresarNombre); 
+$('#separar').click(regresarNombrecompleto); 
 
 function regresarRut(){
     $.ajax({
@@ -33,4 +33,25 @@ function regresarNombre(){
             $('#nombre').val('');
         }
     );
+}
+
+function regresarApellido(){
+    $.ajax({
+        url:'apellido.php',
+        type: 'post',
+        dataType:'json',
+        data:{
+            nombre:$('#nombre').val(),
+        }
+    }).done(
+        function(data){
+            $('#Salida2').append(data);
+            $('#nombre').val('');
+        }
+    );
+}
+
+function regresarNombrecompleto(){
+    regresarNombre();
+    regresarApellido();
 }
