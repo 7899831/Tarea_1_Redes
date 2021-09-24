@@ -1,0 +1,119 @@
+        body {
+            background-image: url("fondito2.jpg");
+            background-size: fill;
+            margin: 0px;
+        }
+
+        .salida { 
+        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+        color: #58390C; 
+        font-size: 18px; 
+        font-weight: 600; 
+        text-align: center; 
+        background: #C289E3; 
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden; 
+        padding: 20px; 
+        border: 2px solid #e171e8;
+        width: 30%;
+        }
+
+        .cajanombreapellido { 
+        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+        color: #000000; 
+        font-size: 18px; 
+        font-weight: 600; 
+        text-align: left; 
+        background: #C289E3; 
+        margin: 20px;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden; 
+        padding: 20px; 
+        padding-top: 0px;
+        border: 2px solid #e171e8;
+        width: 30%;
+        }
+
+        .h3{
+            font: 200% sans-serif;
+            font-weight: 400;
+        }
+
+        .Salida{
+            font:200% sans-serif;
+            font-weight: 300;
+            color:#58390C;
+        }
+
+        .Salida2{
+            font:200% sans-serif;
+            font-weight: 300;
+            color:#58390C
+        }
+
+        .cabeza{
+            position: absolute;
+            top: 2%;
+            width: 100%;
+            text-align: center;
+            font-size: 26px;
+        }
+        .center {
+        position: absolute;
+        top: 15%;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        }
+
+        .inputrut {
+            width: 10%;
+            border: 3px solid purple;
+            padding: 12px 20px;
+            margin: 0px 0;
+        }
+
+        .inputverificador {
+            width: 7.8%;
+            border: 3px solid purple;
+            padding: 12px 20px;
+            margin: 0px 0;
+        }
+
+        .inputnombre {
+            width: 21%;
+            border: 3px solid purple;
+            padding: 12px 20px;
+            margin: 0px 0;
+        }
+
+        .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font: sans-serif;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+
+        .buttonr {
+        background-color:#BB1515;
+        border: none;
+        color: white;
+        padding: 10px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font: sans-serif;
+        margin: 4px 2px;
+        cursor: pointer;
+        }

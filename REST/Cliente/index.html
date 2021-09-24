@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Cliente webservice</title>
-</head>    
+    <link rel="stylesheet" href="stylerest.css">
+</head>   
 <body>
-    <div>
-        <input type = "text" id = "rut" class = "rut" placeholder = "Ingrese rut sin dígito verificador">
-        <input type = "text" id = "verificador" class = "rut" placeholder = "Ingrese dígito Verificador"> 
-        <button type = "button" id = "verificar">Verificar</button>
-        <button type = "button" id = "limpiarRut">Limpiar</button>
+        <div class="cabeza">
+        <h1 class= "h1">API REST</h1>
+        </div>
+        <div class="center">
+        <h2 class="h3">Verificar dígito</h2>
+        <input type = "text" class="inputrut" id = "rut" placeholder = "Ingrese rut sin dígito verificador">
+        <input type = "text" class="inputverificador" id = "verificador" placeholder = "Ingrese dígito verificador"> 
+        <button type = "button" class="button" id = "verificar">Verificar</button>
+        <button type = "button" class="buttonr"id = "limpiarRut">Limpiar</button>
+        <div>
+           <h1 class="salida" id="salida"></h1>
+        </div>
+        <h2 class="h3">Ingrese nombre</h2>
+        <input type = "text" class=inputnombre id = "nombre" placeholder = "Ingrese nombre completo">
+        <button type = "button" class="button" id = "separar">Separar</button>
+        <button type = "button" class="buttonr"id = "limpiarNombre">Limpiar</button>
+        
+        <div class="cajanombreapellido">
+        <h2 class="h3">Nombre o nombres</h2>
+        <div id = "Salida" class="Salida">
+        </div>
+        <h2 class="h3">Apellidos</h2>
+        <div>
+            <h1 class="Salida2" id = "Salida2"></h1>
+        </div>
     </div>
-    <div id = "salida" class= "salida">
-    </div>
-    <div>
-        <input type = "text" id = "nombre" placeholder = "Ingrese nombre completo">
-        <button type = "button" id = separar>Separar</button>
-        <button type = "button" id = "limpiarNombre">Limpiar</button>
-    </div>
-    <h1>Nombre</h1>
-    <div  id = "Salida" class = "Salida"></div>
-    <h1>Apellido</h1>
-    <div id = "Salida2" class = "Salida2"></div>
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
         <script type = "text/javascript" src="cliente.js"></script>
     </body>
