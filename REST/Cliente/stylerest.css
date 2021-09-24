@@ -1,4 +1,4 @@
-body {
+        body {
             background-image: url("fondito2.jpg");
             background-size: fill;
             margin: 0px;
@@ -116,3 +116,4 @@ body {
         font: sans-serif;
         margin: 4px 2px;
         cursor: pointer;
+        }
