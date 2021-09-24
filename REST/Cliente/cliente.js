@@ -1,27 +1,34 @@
 $('#verificar').click(regresarRut);
-$('#separar').click(regresarNombrecompleto); 
+$('#separar').click(regresarNombre); 
+$('#limpiarRut').click(limpiarRut);
+$('#limpiarNombre').click(limpiarNombre);
 
 function regresarRut(){
-    $.ajax({
-        url:'rest.php',
-        type: 'post',
-        dataType:'json',
-        data:{
-            rut:$('#rut').val(),
-            verificador:$('#verificador').val()
-        }
-    }).done(
-        function(data){
-            $('#salida').append(data);
-            $('#rut').val('');
-            $('#verificador').val('');
-        }
-    );
+    if ($('#rut').val() === "" || $('#verificador').val() === ""){
+        $(".salida").empty();
+    }
+    
+    else{
+        $.ajax({
+            url:'restrut.php',
+            type: 'post',
+            dataType:'json',
+            data:{
+                rut:$('#rut').val(),
+                verificador:$('#verificador').val()
+            }
+        }).done(
+            function(data){
+                $(".salida").empty();
+                $('#salida').append(data);
+            }
+        );
+    }
 }
 
 function regresarNombre(){
     $.ajax({
-        url:'prueba.php',
+        url:'restnombreapellido.php',
         type: 'post',
         dataType:'json',
         data:{
@@ -29,29 +36,29 @@ function regresarNombre(){
         }
     }).done(
         function(data){
-            $('#Salida').append(data);
-            $('#nombre').val('');
-        }
-    );
-}
-
-function regresarApellido(){
-    $.ajax({
-        url:'apellido.php',
-        type: 'post',
-        dataType:'json',
-        data:{
-            nombre:$('#nombre').val(),
-        }
-    }).done(
+            $(".Salida").empty();
+            $('#Salida').append(data.nombre);
+        },
         function(data){
-            $('#Salida2').append(data);
-            $('#nombre').val('');
+            $(".Salida2").empty();
+            $('#Salida2').append(data.apellido);
         }
     );
 }
 
-function regresarNombrecompleto(){
-    regresarNombre();
-    regresarApellido();
+function limpiarRut(){
+
+    $('#rut').val('');
+    $('#verificador').val('');
+    $(".salida").empty();
 }
+
+function limpiarNombre(){
+  
+    $('#nombre').val('');
+    $(".Salida").empty();
+    $(".Salida2").empty();
+}
+
+
+

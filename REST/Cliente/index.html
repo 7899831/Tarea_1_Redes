@@ -6,27 +6,22 @@
 </head>    
 <body>
     <div>
-        <h2>Verificar digito</h2>
-        <input type = "text" id = "rut" placeholder = "Ingrese rut sin dígito verificador">
-        <input type = "text" id = "verificador" placeholder = "Ingrese dígito Verificador"> 
-        <button type = "button" id = verificar>Verificar</button>
+        <input type = "text" id = "rut" class = "rut" placeholder = "Ingrese rut sin dígito verificador">
+        <input type = "text" id = "verificador" class = "rut" placeholder = "Ingrese dígito Verificador"> 
+        <button type = "button" id = "verificar">Verificar</button>
+        <button type = "button" id = "limpiarRut">Limpiar</button>
     </div>
-
-    <div id = "salida">
+    <div id = "salida" class= "salida">
     </div>
     <div>
-        <h2>Ingrese nombre</h2>
         <input type = "text" id = "nombre" placeholder = "Ingrese nombre completo">
         <button type = "button" id = separar>Separar</button>
+        <button type = "button" id = "limpiarNombre">Limpiar</button>
     </div>
-    <div id = "Salida">
-        <h2>Nombre</h2>
-    </div>
-    </div>
-    <div id = "Salida2">
-        <h2>Apellido</h2>
-    </div>
-
+    <h1>Nombre</h1>
+    <div  id = "Salida" class = "Salida"></div>
+    <h1>Apellido</h1>
+    <div id = "Salida2" class = "Salida2"></div>
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
         <script type = "text/javascript" src="cliente.js"></script>
     </body>
