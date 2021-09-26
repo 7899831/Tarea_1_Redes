@@ -4,21 +4,6 @@
             margin: 0px;
         }
 
-        .salida { 
-        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
-        color: #58390C; 
-        font-size: 18px; 
-        font-weight: 600; 
-        text-align: center; 
-        background: #C289E3; 
-        margin-right: auto;
-        margin-left: auto;
-        overflow: hidden; 
-        padding: 20px; 
-        border: 2px solid #e171e8;
-        width: 30%;
-        }
-
         .cajanombreapellido { 
         font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
         color: #000000; 
@@ -37,15 +22,19 @@
         width: 30%;
         }
 
-        .h3{
-            font: 200% sans-serif;
-            font-weight: 400;
-        }
-
-        .Salida{
-            font:200% sans-serif;
-            font-weight: 300;
-            color:#58390C;
+        .salida { 
+        font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+        color: #58390C; 
+        font-size: 18px; 
+        font-weight: 600; 
+        text-align: center; 
+        background: #C289E3; 
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden; 
+        padding: 20px; 
+        border: 2px solid #e171e8;
+        width: 30%;
         }
 
         .Salida2{
@@ -54,6 +43,17 @@
             color:#58390C
         }
 
+        .Salida{
+            font:200% sans-serif;
+            font-weight: 300;
+            color:#58390C;
+        }
+        
+        .h3{
+            font: 200% sans-serif;
+            font-weight: 400;
+        }
+         
         .cabeza{
             position: absolute;
             top: 2%;
@@ -99,7 +99,7 @@
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        font: sans-serif;
+        font-family: sans-serif;
         margin: 4px 2px;
         cursor: pointer;
         }
@@ -113,7 +113,7 @@
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        font: sans-serif;
+        font-family: sans-serif;
         margin: 4px 2px;
         cursor: pointer;
         }
