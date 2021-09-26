@@ -7,10 +7,10 @@ function regresarRut(){
     if ($('#rut').val() === "" || $('#verificador').val() === ""){
         $(".salida").empty();
     }
-    
+
     else{
         $.ajax({
-            url:'restrut.php',
+            url:"../Servidor/public/api/rut.php",
             type: 'post',
             dataType:'json',
             data:{
@@ -28,7 +28,7 @@ function regresarRut(){
 
 function regresarNombre(){
     $.ajax({
-        url:'restnombreapellido.php',
+        url: "../Servidor/public/api/nombre.php",
         type: 'post',
         dataType:'json',
         data:{
@@ -37,11 +37,13 @@ function regresarNombre(){
     }).done(
         function(data){
             $(".Salida").empty();
-            $('#Salida').append(data.nombre);
-        },
+            const lista = data.nombres.map((user) => `<li>${user}</li>`);
+            $('#Salida').append(lista);
+            },
         function(data){
             $(".Salida2").empty();
-            $('#Salida2').append(data.apellido);
+            const lista = data.apellidos.map((user) => `<li>${user}</li>`);
+            $('#Salida2').append(lista);
         }
     );
 }
