@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/WSSoap/NombrePropioWebService?wsdl" uri="src/conf/xml-resources/web-service-references/NombrePropioWebService/wsdl/localhost_8080/WSSoap/NombrePropioWebService.wsdl"/>
+    <system systemId="http://localhost:8080/WSSoap/NombrePropioWebService?xsd=1" uri="src/conf/xml-resources/web-service-references/NombrePropioWebService/wsdl/localhost_8080/WSSoap/NombrePropioWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/WSSoap/RutWebService?wsdl" uri="src/conf/xml-resources/web-service-references/RutWebService/wsdl/localhost_8080/WSSoap/RutWebService.wsdl"/>
+    <system systemId="http://localhost:8080/WSSoap/RutWebService?xsd=1" uri="src/conf/xml-resources/web-service-references/RutWebService/wsdl/localhost_8080/WSSoap/RutWebService.xsd_1.xsd"/>
+</catalog>

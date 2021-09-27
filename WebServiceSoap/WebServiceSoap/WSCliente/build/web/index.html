@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WS-SOAP</title>
+        <h1>WS-SOAP</h1>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="funcionesRut.js" type="text/javascript"></script>
+        <script src="funcionesNombrePropio.js" type="text/javascript"></script>
+        <style>
+        body {
+            background-image: url('fondo.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin-left: 300px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            background-color: white;
+        }
+        label{
+            border: 2px solid green;
+            background: linear-gradient(20deg, green, greenyellow);
+            background: rgba(80, 200, 80, 0.6);
+            display: inline-block;
+            vertical-align: middle;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 30px;
+            font-size:130%;
+            resize: none;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 60px;
+            margin-left: auto;
+            margin-right: 250px;
+            font-size:400%;
+        }
+        table{
+            width:450px;
+            background: linear-gradient(20deg, green, greenyellow);
+            padding: 20px;
+            margin: auto;
+            border: 2px solid green;
+            border-radius: 15px;
+            background: rgba(80, 200, 80, 0.3);
+            font-size:130%;
+            resize: none;
+        }
+        input{
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 5px ;
+            background-color: cornsilk;
+            padding: 5px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size:130%;
+            resize: none;
+            cursor: pointer;
+        }
+
+        </style>
+    </head>
+    <body>
+        <form id="frmClienteRut">
+            <br>
+            <label for="DigitoRut">Insertar Rut:</label>
+            <input type="number" id="txtDigitoRut" name="DigitoRut"/>
+            -
+            <input type="text" id="txtVerificadorRut" name="Verificadorut" size="1"/>
+            <input type="submit" value="Evaluar"/>
+            <br><br>
+        </form> 
+        <table id="tblListRut">    
+        </table>
+        <form id="frmClienteNombre">
+            <br>
+            <label for="NmobreCompleto">Nombre Completo:</label>
+            <input type="text" id="txtNombreCompleto"/>
+            <input type="submit" value="Dividir"/>
+            <br><br>
+        </form>
+        <table id="tblListNombre">    
+        </table> 
+    </body>
+</html>
